@@ -4,7 +4,10 @@ package com.example.weatherapp.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Weather {
+import java.io.Serializable;
+
+public class Weather implements Serializable
+{
 
     @SerializedName("id")
     @Expose
@@ -18,6 +21,7 @@ public class Weather {
     @SerializedName("icon")
     @Expose
     private String icon;
+    private final static long serialVersionUID = 3333475176230382293L;
 
     public int getId() {
         return id;

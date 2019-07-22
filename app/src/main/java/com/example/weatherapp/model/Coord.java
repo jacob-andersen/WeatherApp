@@ -4,7 +4,10 @@ package com.example.weatherapp.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Coord {
+import java.io.Serializable;
+
+public class Coord implements Serializable
+{
 
     @SerializedName("lon")
     @Expose
@@ -12,6 +15,7 @@ public class Coord {
     @SerializedName("lat")
     @Expose
     private double lat;
+    private final static long serialVersionUID = 5339907179647336709L;
 
     public double getLon() {
         return lon;

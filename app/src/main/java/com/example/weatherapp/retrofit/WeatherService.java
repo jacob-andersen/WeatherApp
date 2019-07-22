@@ -12,6 +12,6 @@ public interface WeatherService {
 
 //    @GET ("forecast")
 //   Call <List<com.example.weatherapp.model.List>> getForecast(@Query("id") int cityId, @Query("unit") String unit, @Query("appid") String appid );
-    @GET ("data/2.5/weather?")
-    Call <WeatherResponse> getWeather(@Query("lat") String lat, @Query("lon") String lon, @Query("APPID") String appid );
+    @GET ("data/2.5/weather")
+    Call <WeatherResponse> getWeather(@Query("lat") String lat, @Query("lon") String lon, @Query ("units") String units, @Query("APPID") String appid );
 }
