@@ -1,5 +1,5 @@
 
-package com.example.weatherapp.model;
+package com.example.weatherapp.WeatherForecastModel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -21,7 +21,7 @@ public class Weather implements Serializable
     @SerializedName("icon")
     @Expose
     private String icon;
-    private final static long serialVersionUID = 3333475176230382293L;
+    private final static long serialVersionUID = -8171097550539092796L;
 
     public int getId() {
         return id;

@@ -8,8 +8,10 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="5 Day Forecast Goes Here"
+        android:text=""
         android:textSize="24sp" />
+
+    <include layout="@layout/weather_item"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvForecast"

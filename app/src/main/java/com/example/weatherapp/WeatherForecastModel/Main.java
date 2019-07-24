@@ -1,5 +1,5 @@
 
-package com.example.weatherapp.model;
+package com.example.weatherapp.WeatherForecastModel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -12,25 +12,28 @@ public class Main implements Serializable
     @SerializedName("temp")
     @Expose
     private double temp;
-    @SerializedName("pressure")
-    @Expose
-    private double pressure;
-    @SerializedName("humidity")
-    @Expose
-    private int humidity;
     @SerializedName("temp_min")
     @Expose
     private double tempMin;
     @SerializedName("temp_max")
     @Expose
     private double tempMax;
+    @SerializedName("pressure")
+    @Expose
+    private double pressure;
     @SerializedName("sea_level")
     @Expose
     private double seaLevel;
     @SerializedName("grnd_level")
     @Expose
     private double grndLevel;
-    private final static long serialVersionUID = 5682022391879958148L;
+    @SerializedName("humidity")
+    @Expose
+    private int humidity;
+    @SerializedName("temp_kf")
+    @Expose
+    private double tempKf;
+    private final static long serialVersionUID = -7587490734181824997L;
 
     public double getTemp() {
         return temp;
@@ -38,22 +41,6 @@ public class Main implements Serializable
 
     public void setTemp(double temp) {
         this.temp = temp;
-    }
-
-    public double getPressure() {
-        return pressure;
-    }
-
-    public void setPressure(double pressure) {
-        this.pressure = pressure;
-    }
-
-    public int getHumidity() {
-        return humidity;
-    }
-
-    public void setHumidity(int humidity) {
-        this.humidity = humidity;
     }
 
     public double getTempMin() {
@@ -72,6 +59,14 @@ public class Main implements Serializable
         this.tempMax = tempMax;
     }
 
+    public double getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(double pressure) {
+        this.pressure = pressure;
+    }
+
     public double getSeaLevel() {
         return seaLevel;
     }
@@ -86,6 +81,22 @@ public class Main implements Serializable
 
     public void setGrndLevel(double grndLevel) {
         this.grndLevel = grndLevel;
+    }
+
+    public int getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(int humidity) {
+        this.humidity = humidity;
+    }
+
+    public double getTempKf() {
+        return tempKf;
+    }
+
+    public void setTempKf(int tempKf) {
+        this.tempKf = tempKf;
     }
 
 }

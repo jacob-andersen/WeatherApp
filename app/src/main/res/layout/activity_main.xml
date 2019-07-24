@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/forecast_fragment"
-        app:layout_constraintHeight_percent="0.30"
+        app:layout_constraintHeight_percent="0.35"
         tools:layout="@layout/current" />
 
     <fragment
@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/current_weather_fragment"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight_percent="0.70"
+        app:layout_constraintHeight_percent="0.65"
         tools:layout="@layout/forecast" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

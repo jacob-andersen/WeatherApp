@@ -1,5 +1,5 @@
 
-package com.example.weatherapp.model;
+package com.example.weatherapp.CurrentWeatherModel;
 
 import java.io.Serializable;
 import java.util.List;

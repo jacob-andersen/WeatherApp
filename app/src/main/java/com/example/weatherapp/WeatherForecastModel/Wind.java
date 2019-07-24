@@ -1,5 +1,5 @@
 
-package com.example.weatherapp.model;
+package com.example.weatherapp.WeatherForecastModel;
 
 import java.io.Serializable;
 import com.google.gson.annotations.Expose;
@@ -14,7 +14,7 @@ public class Wind implements Serializable
     @SerializedName("deg")
     @Expose
     private double deg;
-    private final static long serialVersionUID = -7216554085478226927L;
+    private final static long serialVersionUID = 1667112544603469949L;
 
     public double getSpeed() {
         return speed;
